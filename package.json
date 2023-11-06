@@ -1,0 +1,22 @@
+{
+  "name": "iwt-pack",
+  "version": "1.0.0",
+  "description": "NodeJs iwt-pack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibrokhim1006/iwt-pack.git"
+  },
+  "keywords": [
+    "Helper"
+  ],
+  "author": "Ibrokhim Istamov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ibrokhim1006/iwt-pack/issues"
+  },
+  "homepage": "https://github.com/Ibrokhim1006/iwt-pack#readme"
+}
