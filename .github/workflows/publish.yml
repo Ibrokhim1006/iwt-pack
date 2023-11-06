@@ -4,11 +4,8 @@ on:
     branches:
       - main
 jobs:
-  publish-gpr:
+  publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - uses: actions/checkout@v2
       # Setup .npmrc file to publish to GitHub Packages
@@ -20,5 +17,9 @@ jobs:
           scope: '@Ibrokhim@1006'
       - run: npm install 
       - run: npm publish --access public
+      - name: Publish to npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=\${NPM_AUTH_TOKEN}" > .npmrc
+          npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
