@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '14'  # Replace with your desired Node.js version
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@Ibrokhim@1006'  # Replace with your GitHub username or organization
+          scope: '@Ibrokhim1006'  # Replace with your GitHub username or organization
 
       - name: Install npm dependencies
         run: npm install
