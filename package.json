@@ -1,6 +1,6 @@
 {
   "name": "iwt-pack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NodeJs iwt-pack",
   "main": "index.js",
   "scripts": {
